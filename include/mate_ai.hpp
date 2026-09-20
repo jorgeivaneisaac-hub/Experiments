@@ -10,13 +10,11 @@ the MIT License.*/
 #include <string>
 #include <vector>
 
-namespace ai_predict {
-namespace lexer {
+namespace ai_predict::lexer {
 struct Token {};
 class Lexer {
 public:
   Lexer(const std::string &input);
   std::vector<Token> tokenize();
-}
-} // namespace lexer
-} // namespace ai_predict
+};
+} // namespace ai_predict::lexer
